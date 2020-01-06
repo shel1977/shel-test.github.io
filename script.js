@@ -47,11 +47,8 @@ findMax = () => {
     });
     let bigValue = convertToNum[0];
     for (let i = 0, len = convertToNum.length; i < len; i++) {
-        let j = i + 1;
-            if (convertToNum[i] > convertToNum[j] && convertToNum[i] > bigValue) {
+            if (convertToNum[i] > bigValue) {
                 bigValue = convertToNum[i];
-            } else if (convertToNum[j] > convertToNum[i] && convertToNum[j] > bigValue){
-                bigValue = convertToNum[j]
             }
     }
     alert(bigValue);
